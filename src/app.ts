@@ -1,13 +1,13 @@
 import express, { Request, Response, json } from 'express';
-import { getPlayer } from './controllers/players-controller';
+import routes from './routes';
 
 function createApp() {
   const app = express();
 
-  // makes the app only accept JSON (no body parsers needed)
-  app.use(json());
+  // middlewares
+  app.use(json()); // accepts only JSON, no body parsers needed
+  app.use('/api', routes);
 
-  app.get('/', getPlayer);
 
   return app;
 }
