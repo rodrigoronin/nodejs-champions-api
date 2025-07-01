@@ -15,6 +15,6 @@ export const findAllPlayers = async (): Promise<PlayerModel[]> => {
   return database;
 };
 
-export const findPlayerbyId = async (id: number): Promise<PlayerModel | undefined> => {
+export const findPlayerbyID = async (id: number): Promise<PlayerModel | undefined> => {
   return database.find((player) => player.id === id);
 };
