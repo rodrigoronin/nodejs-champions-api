@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-champions-api",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "dist": "tsup src",
+    "dev": "tsx src/server.ts",
+    "watch": "tsx watch src/server.ts",
+    "build": "npm run dist && node dist/src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
