@@ -1,11 +1,11 @@
 {
   "name": "nodejs-champions-api",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "main": "index.js",
   "scripts": {
     "dist": "tsup src",
     "dev": "tsx --env-file=.env src/server.ts",
-    "watch": "tsx --env-file=.env watch src/server.ts",
+    "watch": "tsx watch --env-file=.env src/server.ts",
     "build": "npm run dist && node dist/src/index.js"
   },
   "keywords": [],

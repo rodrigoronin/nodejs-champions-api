@@ -1,17 +1,8 @@
-import express, { Request, Response } from "express";
+import createApp from "./app";
 
-const app = express();
+const app = createApp();
+const port = process.env.PORT;
 
-app.get('/', (req:Request, res:Response) => {
-  const data = {
-    name: 'Cristiano Ronaldo',
-    club: 'Al Nassr',
-    value: '12.00 mi. EUR'
-  }
-
-  res.send(JSON.stringify(data));
-})
-
-app.listen(process.env.PORT, () => {
-  console.log('App is running!');
+app.listen(port, () => {
+  console.log(`🚀 app is running on port ${port}!`);
 })
