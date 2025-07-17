@@ -49,3 +49,7 @@ Thumbs.db
 *.swp
 *.bak
 *.orig
+
+# Dev files
+teams.json
+footbal-api-leagues.ts
